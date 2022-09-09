@@ -1,0 +1,60 @@
+public class ropa{
+
+    private string marca, disenador;
+    private int  valor;
+
+    public string getmarca(){
+       return (this.marca);
+    }
+
+public string setmarca(string marca){
+        return this.marca=marca;
+        }
+ public string getdiseñador(){
+        return(this.disenador);
+    }
+    public string setdiseñador(string marca){
+        return this.disenador=marca;
+        }
+
+ public int getvalor(){
+        return (this.valor);
+ }
+public void setvalor(int valor){
+        this.valor=valor;
+}
+public void tostring(){ 
+    Console.WriteLine("el diseñador "+this.disenador+" creo la marca" +this.marca+" que tiene el valor de "+this.valor);
+}
+}
+[1:25 p. m., 9/9/2022] Mi Hermana Lorena: public class almacen{
+
+public static void Main(string[] args){
+
+ropa spanish =new ropa ();
+ropa nike=new ropa ();
+
+spanish.setdiseñador("juan camilo");
+spanish.setmarca("spanish");
+spanish.setvalor(300000);
+spanish.tostring();
+
+nike.setdiseñador("andres");
+nike.setmarca("nike");
+nike.setvalor(400000);
+nike.tostring();
+
+if (spanish.getvalor() >= nike.getvalor()) {
+
+Console.WriteLine ("spanish tiene mas valor");
+            	}
+		else {
+            // Establece la accion por falso
+                	Console.WriteLine ("nike tien mas valor");
+            	}
+// fin condicional
+	
+    // fin algoritmo
+
+}
+    }
